@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand m-0 p-0" href="index.html">
-            <h2 class="text-uppercase">Casa Repostera</h2>
+            <h1 class="text-uppercase">Casa Repostera</h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,12 +72,12 @@
           <div>
             <p class="m-0">Casa Matriz</p>
             <p class="m-0"><i class="fa-solid fa-phone"></i> (+56) 9 9543 2122</p>
-            <p><i class="fa-solid fa-location-dot"></i> Cardenal José Maria Caro 2635, local 92 AgroSur, Iquique</p>
+            <p><i class="fa-solid fa-location-dot"></i> <a href="index.html#map">Cardenal José Maria Caro 2635, local 92 AgroSur, Iquique</a></p>
           </div>
           <div>
             <p class="m-0">Sucursal</p>
             <p class="m-0"><i class="fa-solid fa-phone"></i> (+56) 9 9178 1672</p>
-            <p><i class="fa-solid fa-location-dot"></i> O’Higgins 899, locales 1 y 2, Iquique</p>
+            <p><i class="fa-solid fa-location-dot"></i> <a href="index.html#map">O’Higgins 899, locales 1 y 2, Iquique</a></p>
           </div>
           <div>
             <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
@@ -89,51 +89,51 @@
 
       <hr class="w-75 mx-auto my-5">
 
-      <div id="catalogue">
+      <section id="catalogue">
         <h2>Catálogo</h2>
         <div class="catalogue-list">
-          <div class="catalogue-item">
+          <article class="catalogue-item">
             <p>Item 1</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 2</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 3</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 4</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 5</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 6</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 7</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
-          <div class="catalogue-item">
+          </article>
+          <article class="catalogue-item">
             <p>Item 8</p>
             <img src="https://via.placeholder.com/200x300" alt="">
             <a href="#" class="stretched-link"></a>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
 
       <hr class="w-75 mx-auto my-5">
 
@@ -141,7 +141,21 @@
       <br>
       mayoreo
       <br>
-      mapas
+      <section id="map">
+        <div class="map-buttons" id="map-tab" role="tablist">
+          <h2>Mapa</h2>
+          <button id="casa-matriz-tab" data-bs-toggle="tab" data-bs-target="#casa-matriz-list" type="button" role="tab" aria-controls="casa-matriz-list" aria-selected="true">Casa Matriz</button>
+          <button id="sucursal-tab" data-bs-toggle="tab" data-bs-target="#sucursal-list" type="button" role="tab" aria-controls="sucursal-list" aria-selected="false">Sucursal</button>
+        </div>
+        <div class="map tab-content" id="map-list">
+          <div class="tab-pane fade show active" id="casa-matriz-list" role="tabpanel" aria-labelledby="casa-matriz-tab" tabindex="0">
+            <img src="https://via.placeholder.com/1440x900/000000" alt="">
+          </div>
+          <div class="tab-pane" id="sucursal-list" role="tabpanel" aria-labelledby="sucursal-tab" tabindex="0">
+            <img src="https://via.placeholder.com/1440x900/FFFFFF" alt="">
+          </div>
+        </div>
+      </section>
 
     </main>
 
