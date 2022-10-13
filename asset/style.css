@@ -63,78 +63,7 @@ main {
     background-color: hsl(var(--container-light));
 }
 
-/* Footer */
-footer div:nth-child(1) {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: .25em;
-  
-    margin: 0;
-    padding: 2em 3em;
-  
-    font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-  
-    color: hsl(var(--light));
-    background-color: hsl(var(--container-light));
-}
 
-footer div:nth-child(1) a {
-    color: hsl(var(--light));
-}
-
-footer div:nth-child(1) a:hover {
-    color: hsl(var(--light), 50%);
-}
-
-footer div:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1em;
-  
-    margin: 0;
-    padding: 1em 0;
-  
-    font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-  
-    color: hsl(var(--light));
-    background-color: hsl(var(--bg-dark));
-  }
-  footer p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: hsl(var(--important-light));
-  }
-  
-  footer a:hover {
-    color: hsl(var(--important-light), 60%);
-  }
-  
-  footer a > span:hover {
-    text-decoration: underline;
-  }
-  
-  @media only screen and (max-width: 570px) {
-    #author > * {
-      text-align: center;
-      width: 100%;
-      gap: 0;
-    }
-  
-    #author p {
-      padding-top: .25em;
-    }
-  }
 
 /* Navbar */
 .navbar {
@@ -438,3 +367,75 @@ input[type=search]:is(:active, :focus) {
 
     border-radius: .5em 0 .5em .5em;
 }
+
+/* Footer */
+footer {
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+
+    color: hsl(var(--light));
+    background-color: hsl(var(--container-light));
+}
+
+footer div:nth-child(1) {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: .25em;
+
+    max-width: 1200px;
+  
+    margin: 0 auto;
+    padding: 2em 3em;
+}
+
+footer div:nth-child(1) a {
+    color: hsl(var(--light));
+}
+
+footer div:nth-child(1) a:hover {
+    color: hsl(var(--light), 50%);
+}
+
+footer div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  
+    margin: 0;
+    padding: 1em 0;
+  
+    background-color: hsl(var(--bg-dark));
+  }
+  footer p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: hsl(var(--important-light));
+  }
+  
+  footer a:hover {
+    color: hsl(var(--important-light), 60%);
+  }
+  
+  footer a > span:hover {
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 570px) {
+    #author > * {
+      text-align: center;
+      width: 100%;
+      gap: 0;
+    }
+  
+    #author p {
+      padding-top: .25em;
+    }
+  }
