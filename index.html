@@ -142,17 +142,19 @@
       mayoreo
       <br>
       <section id="map">
-        <div class="map-buttons" id="map-tab" role="tablist">
-          <h2>Mapa</h2>
-          <button id="casa-matriz-tab" data-bs-toggle="tab" data-bs-target="#casa-matriz-list" type="button" role="tab" aria-controls="casa-matriz-list" aria-selected="true">Casa Matriz</button>
-          <button id="sucursal-tab" data-bs-toggle="tab" data-bs-target="#sucursal-list" type="button" role="tab" aria-controls="sucursal-list" aria-selected="false">Sucursal</button>
+        <div class="nav nav-tabs border-0" id="map-tab" role="tablist">
+          <div class="map-buttons">
+            <h2>Mapa</h2>
+            <button class="active" id="casa-matriz-tab" data-bs-toggle="tab" data-bs-target="#casa-matriz-list" type="button" role="tab" aria-controls="casa-matriz-list" aria-selected="true">Casa Matriz</button>
+            <button id="sucursal-tab" data-bs-toggle="tab" data-bs-target="#sucursal-list" type="button" role="tab" aria-controls="sucursal-list" aria-selected="false">Sucursal</button>
+          </div>
         </div>
-        <div class="map tab-content" id="map-list">
+        <div class="tab-content" id="map-list">
           <div class="tab-pane fade show active" id="casa-matriz-list" role="tabpanel" aria-labelledby="casa-matriz-tab" tabindex="0">
-            <img src="https://via.placeholder.com/1440x900/000000" alt="">
+            <div class="map"><img src="https://via.placeholder.com/1440x900/000000" alt=""></div>
           </div>
           <div class="tab-pane" id="sucursal-list" role="tabpanel" aria-labelledby="sucursal-tab" tabindex="0">
-            <img src="https://via.placeholder.com/1440x900/FFFFFF" alt="">
+            <div class="map"><img src="https://via.placeholder.com/1440x900/FFFFFF" alt=""></div>
           </div>
         </div>
       </section>
