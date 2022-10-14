@@ -63,8 +63,6 @@ main {
     background-color: hsl(var(--container-light));
 }
 
-
-
 /* Navbar */
 .navbar {
     background-color: hsl(var(--bg-dark));
@@ -118,6 +116,15 @@ input[type=search]:is(:active, :focus) {
 .btn-buscar:active {
     scale: 1.03;
     box-shadow: 0 0 0 4px hsl(var(--important-light), 40%);
+}
+
+#alert {
+    color: hsl(var(--dark));
+    background-color: hsl(var(--number), 25%);
+}
+
+#alert > p {
+
 }
 
 /* Products */
@@ -409,33 +416,33 @@ footer div:nth-child(2) {
     padding: 1em 0;
   
     background-color: hsl(var(--bg-dark));
-  }
-  footer p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: hsl(var(--important-light));
-  }
-  
-  footer a:hover {
-    color: hsl(var(--important-light), 60%);
-  }
-  
-  footer a > span:hover {
-    text-decoration: underline;
-  }
-  
-  @media only screen and (max-width: 570px) {
-    #author > * {
-      text-align: center;
-      width: 100%;
-      gap: 0;
-    }
-  
-    #author p {
-      padding-top: .25em;
-    }
-  }
+}
+footer p {
+margin: 0;
+padding: 0;
+}
+
+footer a {
+text-decoration: none;
+color: hsl(var(--important-light));
+}
+
+footer a:hover {
+color: hsl(var(--important-light), 60%);
+}
+
+footer a > span:hover {
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 570px) {
+#author > * {
+    text-align: center;
+    width: 100%;
+    gap: 0;
+}
+
+#author p {
+    padding-top: .25em;
+}
+}
