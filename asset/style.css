@@ -64,6 +64,14 @@ main {
 }
 
 /* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
 .navbar {
     background-color: hsl(var(--bg-dark));
 }
@@ -118,75 +126,14 @@ input[type=search]:is(:active, :focus) {
     box-shadow: 0 0 0 4px hsl(var(--important-light), 40%);
 }
 
-/* Whole-sale */
-#whole-sale {
-    background-image: url('https://via.placeholder.com/700x200');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    color: hsl(var(--light));
-    
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    border: none;
-    border-radius: .5em;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: .5em;
-}
-
-#whole-sale::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: hsl(var(--bg-dark));
-    z-index: -1;
-    opacity: 0.5;
-}
-
-@media only screen and (max-width: 880px) {
-    #whole-sale {
-        align-items: center;
-        gap: 1em;
-    }
-}
-
-.btn-whole-sale {
-    align-items: center;
-    justify-self: start;
-
-    padding: .5em 1.5em;
-    border: none;
-    border-radius: .5em;
-
-    color: hsl(var(--light));
-    background-color: hsl(var(--number-purple), 70%);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-
-    cursor: pointer;
-}
-
-.btn-whole-sale:hover {
-    color: inherit;
-    background-color: hsl(var(--number-purple));
-}
-
-.btn-whole-sale:active {
-    box-shadow: 0 0 0 3px hsl(var(--light), 50%);
-}
-
 /* Products */
 .products-container {
     display: flex;
     width: 100%;
 
     font-weight: 700;
+
+    margin-top: 55px;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -267,6 +214,71 @@ input[type=search]:is(:active, :focus) {
         outline: .1mm solid hsl(var(--light), 10%);
     }
 
+}
+
+/* Whole-sale */
+#whole-sale {
+    background-image: url('https://via.placeholder.com/700x200');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 2em;
+
+    color: hsl(var(--light));
+    
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border: none;
+    border-radius: .5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+#whole-sale::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: hsl(var(--bg-dark));
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 880px) {
+    #whole-sale {
+        align-items: center;
+        gap: 1em;
+    }
+}
+
+.btn-whole-sale {
+    align-items: center;
+    justify-self: start;
+
+    padding: .5em 1.5em;
+    border: none;
+    border-radius: .5em;
+
+    color: hsl(var(--light));
+    background-color: hsl(var(--number-purple), 70%);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.btn-whole-sale:hover {
+    color: inherit;
+    background-color: hsl(var(--number-purple));
+}
+
+.btn-whole-sale:active {
+    box-shadow: 0 0 0 3px hsl(var(--light), 50%);
 }
 
 /* Information */
