@@ -663,6 +663,8 @@ body {
 
     border-radius: var(--radius-accent);
     position: relative;
+
+    overflow-x: hidden;
 }
 
 .products-wrapper .span-top {
