@@ -688,11 +688,11 @@ body {
     overflow: hidden;
 }
 
-.products-holder:nth-child(2) {
+.products-holder:nth-child(3) {
     transition-delay: 300ms;
 }
 
-.products-holder:nth-child(3) {
+.products-holder:nth-child(4) {
     transition-delay: 600ms;
 }
 
@@ -774,6 +774,8 @@ body {
     bottom: -1em;
     right: 2.5em;
     background-color: hsl(var(--important));
+    outline: 1px solid hsl(var(--important));
+    outline-offset: -1px;
     border-radius: var(--radius);
     
     z-index: 1;
