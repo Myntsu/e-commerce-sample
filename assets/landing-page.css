@@ -621,6 +621,8 @@ body {
 
     position: relative;
     background-color: white;
+
+    overflow: hidden;
 }
 
 /* SVG */
@@ -663,8 +665,6 @@ body {
 
     border-radius: var(--radius-accent);
     position: relative;
-
-    overflow: hidden;
 }
 
 .products-wrapper .span-top {
