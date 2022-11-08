@@ -664,7 +664,7 @@ body {
     border-radius: var(--radius-accent);
     position: relative;
 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .products-wrapper .span-top {
