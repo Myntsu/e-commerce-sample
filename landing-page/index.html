@@ -11,7 +11,7 @@
     <meta property="og:title" content="Galletitas de Florinda">
     <meta property="og:description" content="¡Encuentra todas las galletitas que andas buscando aquí!">
     <meta property="og:url" content="https://myntsu.github.io/landing-page/">
-    <meta property="og:image" content="../assets/svg/2138188_baker_bakery_cookie_dessert_food_icon.svg">
+    <meta property="og:image" content="/assets/svg/2138188_baker_bakery_cookie_dessert_food_icon.svg">
     <meta property="og:image:alt" content="Logo">
     <meta property="og:image:width" content="320" />
     <meta property="og:image:height" content="180" />
@@ -26,8 +26,6 @@
 
     <script defer src="../assets/landing-page.js"></script>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
     <link rel="title icon" type="image/png" href="../assets/svg/2138188_baker_bakery_cookie_dessert_food_icon.svg">
     <link rel="icon" type="image/png" href="../assets/svg/2138188_baker_bakery_cookie_dessert_food_icon.svg" sizes="16x16">
     <link rel="icon" type="image/png" href="../assets/svg/2138188_baker_bakery_cookie_dessert_food_icon.svg" sizes="32x32">
@@ -39,9 +37,9 @@
 <body>
 <nav class="navbar">
     <div class="navbar-wrapper">
-        <div>
+        <div class="logo">
             <img src="../assets/svg/2138188_baker_bakery_cookie_dessert_food_icon.svg" alt="Cookie logo brand">
-            <span>Galletitas de Florinda</span>
+            <span class="logo">Galletitas de Florinda</span>
         </div>
         <input id="checkbox" type="checkbox" name="checkbox" value="checkbox"/>
         <label class="navbar-toggler" type="button" for="checkbox">
@@ -136,29 +134,39 @@
 
     <section id="Products">
         <div class="products-wrapper">
-            <span class="span-top">Nuestros productos</span>
+            <h2 class="header-top">Nuestro catálogo</h2>
             <div class="products-holder fade-in">
+                <div class="price-tag fade-in">
+                    <span>12 x $3.990</span>
+                </div>
                 <img src="https://images.unsplash.com/photo-1598977801327-b21fe652e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="Galletas apiladas sin aderezos">
                 <div class="item-name">
                     <p>A lo natural</p>
                     <p>En base alulosa, bajas en calorías y en grasas</p>
-                    <a href="https://www.mercadolibre.cl/"><i class="fa-solid fa-shop"></i> Comprar</a>
+                    <a href="https://www.mercadolibre.cl/"><i class="fa-solid fa-shop"></i> Ir a la Tienda</a>
                 </div>
             </div>
             <div class="products-holder fade-in">
+                <div class="price-tag fade-in">
+                    <span>6 x $2.990</span>
+                </div>
                 <img src="https://images.unsplash.com/photo-1619149651177-b09092806f1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Galletas apiladas rellenas con manjar y crema">
                 <div class="item-name">
                     <p>Rellenas</p>
-                    <p>Con manjar y crema bajos en grasa</p>
-                    <a href="https://www.mercadolibre.cl/"><i class="fa-solid fa-shop"></i> Comprar</a>
+                    <p>Con manjar y cremas, bajas en grasas</p>
+                    <a href="https://www.mercadolibre.cl/"><i class="fa-solid fa-shop"></i> Ir a la Tienda</a>
                 </div>
             </div>
             <div class="products-holder fade-in">
+                <div class="price-tag fade-in">
+                    <span>6 x $2.490</span>
+                    <span>12 x $4.990</span>
+                </div>
                 <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Galletas apiladas con una cuchara vertiendo chocolate derretido">
                 <div class="item-name">
                     <p>Bañadas</p>
                     <p>En chocolate, manjar y otras delicias</p>
-                    <a href="https://www.mercadolibre.cl/"><i class="fa-solid fa-shop"></i> Comprar</a>
+                    <a href="https://www.mercadolibre.cl/"><i class="fa-solid fa-shop"></i> Ir a la Tienda</a>
                 </div>
             </div>
             <div class="clip-path-ani">
@@ -177,18 +185,84 @@
         </div>
     </div>
     
-
     <section id="Contact">
-        <h3>My Google Maps Demo</h3>
-        <!--The div element for the map -->
-        <div id="map"></div>
+
+        <form action="https://formsubmit.co/dingodille16@hotmail.com" method="POST">
+            <div class="form-information">
+                <div class="alert">
+                    <div>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <p> Si te gusto esta plantilla, no dudes en contactarme rellenando el formulario de abajo. Me pondré en contacto contigo via Whatsapp chat o Email.</p>
+                </div>
+                <h3>Contacto</h3>
+                <p>Si tienes alguna duda, consulta o <b>compras al por mayor</b>, no dudes en enviarnos tu información.</b></p>
+                <p><i class="fa-solid fa-phone"></i> Te contactaremos directamente por <b><i class="fa-brands fa-whatsapp"></i> Whatsapp</b> o <b><i class="fa-solid fa-envelope"></i> Email</b>.</p>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="Nombre" placeholder="Nombre Apellido" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="Email" placeholder="ejemplo@email.com" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" type="text" name="Telefono" placeholder="+569 1234 5678" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="Descripcion" id="descripcion" cols="30" rows="7" placeholder="Buenas tardes me gustaría ordenar 3 docenas de galletas a lo natural."></textarea>
+                </div>
+                <button class="submit-button" type="submit" aria-label="Botón para enviar información.">
+                    <span></span>
+                </button>
+            </div>
+    
+        </form>
+
+
+        <div class="map-wrapper">
+            <h3>Ubicación</h3>
+            <h4><i class="fa-solid fa-location-dot"></i> Av. Héroes de la Concepción #2555</h4>
+            <h4>Local 102 - Segundo piso</h4>
+            <!--The div element for the map -->
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.629214419023!2d-70.14498374984643!3d-20.232723252951633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915215bc3efe03d9%3A0xe1c9577a6f8ed42c!2sMallplaza%20Iquique!5e0!3m2!1sen!2scl!4v1668007012495!5m2!1sen!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 </main>
 
-<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-defer
-></script>
-    
+<footer>
+    <div>
+        <div class="footer-links">
+            <a href="#Home">Inicio</a>
+            <a href="#About">Nosotros</a>
+            <a href="#Products">Productos</a>
+            <a href="#Contact">Contacto</a>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.mercadolibre.cl/">Mercado Libre</a>
+            <a href="https://www.shopify.com/">Shopify</a>
+            <a href="https://www.amazon.com/">Amazon</a>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.whatsapp.com/">Whatsapp</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.google.cl/">Google</a>
+        </div>
+        <div class="footer-aside">
+            <h3>Síguenos</h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com" aria-label="Link a página de Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.whatsapp.com" aria-label="Link a número de Whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://www.instagram.com" aria-label="Link a página de Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

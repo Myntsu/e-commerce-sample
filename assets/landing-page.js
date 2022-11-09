@@ -1,6 +1,6 @@
 // Scrollspy
 let section = document.querySelectorAll('header, section');
-let navLinks = document.querySelectorAll('.navbar-items a');
+let navbarLinks = document.querySelectorAll('.navbarbar-items a');
 
 window.onscroll = () =>{
 
@@ -12,15 +12,49 @@ window.onscroll = () =>{
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height){
-            navLinks.forEach(links =>{
+            navbarLinks.forEach(links =>{
                 links.classList.remove('active');
-                document.querySelector('.navbar-items a[href*=' + id + ']').classList.add('active');
+                document.querySelector('.navbarbar-items a[href*=' + id + ']').classList.add('active');
             });
         };
 
     });
 
 };
+
+// Adding background on scroll
+const navbar = document.querySelector(".navbar");
+const main = document.querySelector("main");
+
+const mainDistance = main.getBoundingClientRect().y;
+
+window.addEventListener(
+  "scroll",
+  throttle(() => {
+    if (window.scrollY < mainDistance) {
+      navbar.classList.remove("navbar-dark");
+    } else {
+      navbar.classList.add("navbar-dark");
+    }
+  }),
+  20,
+);
+
+function throttle(fn, ms) {
+  let throttled = false;
+
+  return function () {
+    if (throttled) return;
+
+    throttled = true;
+    fn();
+    setTimeout(function () {
+      throttled = false;
+    }, ms);
+  };
+}
+
+console.log(mainDistance);
 
 // Transition on scroll effects
 const observer = new IntersectionObserver(
@@ -41,46 +75,21 @@ const observer = new IntersectionObserver(
 const hiddenElements = document.querySelectorAll('.hidden, .fade-in');
 hiddenElements.forEach((el) => observer.observe(el));
 
-// Adding background on scroll
-const navbar = document.querySelector(".navbar");
-const products = document.querySelector("#Products");
+// let lastScroll = 0;
+// const scrolled = window.scrollY;
 
-const productsOptions = {
-    rootMargin: "-300px",
-};
+// const navbarbar = document.querySelector('.navbarbar');
 
-const productsObserver = new IntersectionObserver(function(entries){
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            navbar.classList.add("navbar-dark");
-        }
-        else {
-            navbar.classList.remove("navbar-dark");
-        }
-    });
-}, productsOptions);
+// window.addEventListener('scroll', () => {
+//     if (scrolled <= 0) {
+//         navbarbar.classList.add('navbarbar-dark');
+//     }
 
-productsObserver.observe(products);
+//     if (scrolled > lastScroll) {
+//         navbarbar.classList.remove('navbarbar-dark');
+//     }
 
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
-// Initialize and add the map
-function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.031 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
-  
-  window.initMap = initMap;
+//     lastScroll = scrolled;
+// });
+
+// console.log(scroll);
