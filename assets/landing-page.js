@@ -14,7 +14,7 @@ window.onscroll = () =>{
         if(top >= offset && top < offset + height){
             navbarLinks.forEach(links =>{
                 links.classList.remove('active');
-                document.querySelector('.navbarbar-items a[href*=' + id + ']').classList.add('active');
+                document.querySelector('.navbar-items a[href*=' + id + ']').classList.add('active');
             });
         };
 
@@ -53,8 +53,6 @@ function throttle(fn, ms) {
     }, ms);
   };
 }
-
-console.log(mainDistance);
 
 // Transition on scroll effects
 const observer = new IntersectionObserver(
