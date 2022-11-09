@@ -1,6 +1,6 @@
 // Scrollspy
 let section = document.querySelectorAll('header, section');
-let navbarLinks = document.querySelectorAll('.navbarbar-items a');
+let navbarLinks = document.querySelectorAll('.navbar-items a');
 
 window.onscroll = () =>{
 
