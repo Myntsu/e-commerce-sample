@@ -72,22 +72,3 @@ const observer = new IntersectionObserver(
 
 const hiddenElements = document.querySelectorAll('.hidden, .fade-in');
 hiddenElements.forEach((el) => observer.observe(el));
-
-// let lastScroll = 0;
-// const scrolled = window.scrollY;
-
-// const navbarbar = document.querySelector('.navbarbar');
-
-// window.addEventListener('scroll', () => {
-//     if (scrolled <= 0) {
-//         navbarbar.classList.add('navbarbar-dark');
-//     }
-
-//     if (scrolled > lastScroll) {
-//         navbarbar.classList.remove('navbarbar-dark');
-//     }
-
-//     lastScroll = scrolled;
-// });
-
-// console.log(scroll);
